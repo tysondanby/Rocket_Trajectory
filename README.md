@@ -7,6 +7,8 @@ Between the markers "PARAMETERS" and "END-PARAMETERS," There are several launch 
 Details about the flight path can be defined by editing "rocketfun.m" between the markers "THINGS YOU CAN CONTROL" and "END THINGS YOU CAN CONTROL"
 The default flight path is ascent, gravity turn, and low Earth orbit.
 
+To run the simulation, Run Saturn_V.m
+
 
 TODO:
 Add a config file so the user can use this to set parameters and functions instead of editing code.
