@@ -1,3 +1,5 @@
+ %%%%PARAMETERS%%%%--------------------------------------------------------
+
 %ASSIGN GLOBAL CONSTANTS
 global  R GM rho c A Isp endMass Tmax omega stage beginMass mass tFinal
 GM=3.986004418e14;%Gravitational parameter
@@ -20,6 +22,10 @@ Altitude=200;%just an estimation
 
 %DEFINE FLIGHT INFORMATION
 tFinal=10000;%number of seconds to simulate.
+
+%%%%END-PARAMETERS%%%%-----------------------------------------------------
+
+
 
 stage=1; %launch stage is 1
 

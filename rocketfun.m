@@ -69,10 +69,10 @@ function xdot = rocketfun(t,x)
     
     %heading without considering pitch
 
-    yawhdg=rot(position,yaw)*airV;
+    yawhdg=rotationMatrix(position,yaw)*airV;
     
     %complete heading (i.e. THE VECTOR REPRESENTING WHERE THE ROCKET POINTS)
-    hdg=rot(cross(yawhdg,position),pitch)*yawhdg;
+    hdg=rotationMatrix(cross(yawhdg,position),pitch)*yawhdg;
     hdg=hdg./norm(hdg);
     velocity=x(4:6);
     
