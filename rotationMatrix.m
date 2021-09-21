@@ -1,6 +1,9 @@
 function A= rotationMatrix(U, theta)
 %Computes a rotation matrix about an arbitrary axis U. Based on formula found at  http://ksuweb.kennesaw.edu/~plaval/math4490/rotgen.pdf
 
+    %Make U a unit vector: 
+    U=U/norm(U);
+
     %This makes writing the matrix out less cumbersome.
     C= cos(theta);
     S= sin(theta);
